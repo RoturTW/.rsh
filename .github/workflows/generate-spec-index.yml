@@ -5,11 +5,18 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Add permissions for the workflow
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   generate-index:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Generate Spec Index
         run: |
@@ -25,13 +32,13 @@ jobs:
             rel_path=${file#spec/}
             # Get the command name (filename without .md)
             cmd_name=$(basename "$file" .md)
-            # Create a link to the file
+            # Create a link to the file with path in angle brackets
             echo "- [$cmd_name](<spec/$rel_path>)" >> SPEC_INDEX.md
           done
           
       - name: Commit and push if changed
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add SPEC_INDEX.md
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update spec index" && git push) 
