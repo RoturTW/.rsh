@@ -29,14 +29,12 @@ jobs:
           # Create a temporary file to store entries
           temp_file=$(mktemp)
           
-          # Find all .md files and create entries
+          # Find all .md files in spec directory and create entries
           find spec -type f -name "*.md" | while read -r file; do
-            # Get the relative path from spec directory
-            rel_path=${file#spec/}
             # Get the command name (filename without .md)
             cmd_name=$(basename "$file" .md)
             # Store the entry with command name for sorting
-            echo "$cmd_name|<spec/$rel_path>" >> "$temp_file"
+            echo "$cmd_name|<spec/$cmd_name.md>" >> "$temp_file"
           done
           
           # Sort entries by command name and create the index
