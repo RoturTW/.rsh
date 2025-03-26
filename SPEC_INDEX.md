@@ -4,73 +4,74 @@ This is an automatically generated alphabetical index of all specification files
 
 
 ## A
-- [app](<spec/package management/app.md>)
+- [app](<spec/app.md>)
 
 ## C
-- [calc](<spec/text handling/calc.md>)
-- [cat](<spec/file management/cat.md>)
-- [cbcopy](<spec/miscellaneous/cbcopy.md>)
-- [cd](<spec/file management/cd.md>)
-- [chr](<spec/text handling/chr.md>)
-- [clear](<spec/miscellaneous/clear.md>)
+- [calc](<spec/calc.md>)
+- [cat](<spec/cat.md>)
+- [cbcopy](<spec/cbcopy.md>)
+- [cd](<spec/cd.md>)
+- [chr](<spec/chr.md>)
+- [clear](<spec/clear.md>)
 - [command syntax](<spec/command syntax.md>)
 
 ## D
-- [date](<spec/system info/date.md>)
-- [disconnect](<spec/network/disconnect.md>)
-- [disk](<spec/system info/disk.md>)
-- [durl](<spec/network/durl.md>)
+- [date](<spec/date.md>)
+- [disconnect](<spec/disconnect.md>)
+- [disk](<spec/disk.md>)
+- [durl](<spec/durl.md>)
 
 ## E
-- [echo](<spec/text handling/echo.md>)
-- [exit](<spec/miscellaneous/exit.md>)
+- [echo](<spec/echo.md>)
+- [exit](<spec/exit.md>)
 
 ## F
-- [font](<spec/package management/font.md>)
+- [font](<spec/font.md>)
 
 ## H
-- [htop](<spec/system info/htop.md>)
+- [help](<spec/help.md>)
+- [htop](<spec/htop.md>)
 
 ## I
-- [info](<spec/system info/info.md>)
-- [input](<spec/miscellaneous/input.md>)
+- [info](<spec/info.md>)
+- [input](<spec/input.md>)
 
 ## L
-- [la](<spec/file management/la.md>)
-- [ls](<spec/file management/ls.md>)
+- [la](<spec/la.md>)
+- [ls](<spec/ls.md>)
 
 ## M
-- [me](<spec/miscellaneous/me.md>)
-- [mkdir](<spec/file management/mkdir.md>)
-- [msg](<spec/network/msg.md>)
-- [mv](<spec/file management/mv.md>)
+- [me](<spec/me.md>)
+- [mkdir](<spec/mkdir.md>)
+- [msg](<spec/msg.md>)
+- [mv](<spec/mv.md>)
 
 ## O
-- [online](<spec/system info/online.md>)
-- [ord](<spec/text handling/ord.md>)
+- [online](<spec/online.md>)
+- [ord](<spec/ord.md>)
 
 ## P
-- [package](<spec/package management/package.md>)
-- [pwd](<spec/file management/pwd.md>)
+- [package](<spec/package.md>)
+- [pwd](<spec/pwd.md>)
 
 ## R
-- [random](<spec/miscellaneous/random.md>)
-- [rm](<spec/file management/rm.md>)
+- [random](<spec/random.md>)
+- [rm](<spec/rm.md>)
 
 ## S
-- [set](<spec/miscellaneous/set.md>)
-- [shutdown](<spec/network/shutdown.md>)
-- [su](<spec/user management/su.md>)
+- [set](<spec/set.md>)
+- [shutdown](<spec/shutdown.md>)
+- [su](<spec/su.md>)
 
 ## T
-- [touch](<spec/file management/touch.md>)
+- [touch](<spec/touch.md>)
 
 ## U
-- [upload](<spec/file management/upload.md>)
-- [useradd](<spec/user management/useradd.md>)
-- [userdel](<spec/user management/userdel.md>)
-- [users](<spec/user management/users.md>)
+- [upload](<spec/upload.md>)
+- [useradd](<spec/useradd.md>)
+- [userdel](<spec/userdel.md>)
+- [users](<spec/users.md>)
 
 ## W
-- [wc](<spec/text handling/wc.md>)
-- [wget](<spec/file management/wget.md>)
+- [wc](<spec/wc.md>)
+- [wget](<spec/wget.md>)
