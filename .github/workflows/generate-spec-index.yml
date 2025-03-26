@@ -1,0 +1,37 @@
+name: Generate Spec Index
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Generate Spec Index
+        run: |
+          # Create the index file header
+          echo "# RSH Specification Index" > SPEC_INDEX.md
+          echo "" >> SPEC_INDEX.md
+          echo "This is an automatically generated alphabetical index of all specification files." >> SPEC_INDEX.md
+          echo "" >> SPEC_INDEX.md
+          
+          # Find all .md files in spec directory and create links
+          find spec -type f -name "*.md" | sort | while read -r file; do
+            # Get the relative path from spec directory
+            rel_path=${file#spec/}
+            # Get the command name (filename without .md)
+            cmd_name=$(basename "$file" .md)
+            # Create a link to the file
+            echo "- [$cmd_name](spec/$rel_path)" >> SPEC_INDEX.md
+          done
+          
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add SPEC_INDEX.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update spec index" && git push) 
