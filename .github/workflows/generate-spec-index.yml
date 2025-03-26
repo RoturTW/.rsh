@@ -26,14 +26,33 @@ jobs:
           echo "This is an automatically generated alphabetical index of all specification files." >> SPEC_INDEX.md
           echo "" >> SPEC_INDEX.md
           
-          # Find all .md files in spec directory and create links
-          find spec -type f -name "*.md" | sort | while read -r file; do
+          # Create a temporary file to store entries
+          temp_file=$(mktemp)
+          
+          # Find all .md files and create entries
+          find spec -type f -name "*.md" | while read -r file; do
             # Get the relative path from spec directory
             rel_path=${file#spec/}
             # Get the command name (filename without .md)
             cmd_name=$(basename "$file" .md)
-            # Create a link to the file with path in angle brackets
-            echo "- [$cmd_name](<spec/$rel_path>)" >> SPEC_INDEX.md
+            # Store the entry with command name for sorting
+            echo "$cmd_name|<spec/$rel_path>" >> "$temp_file"
+          done
+          
+          # Sort entries by command name and create the index
+          current_letter=""
+          sort -f "$temp_file" | while IFS='|' read -r cmd_name path; do
+            # Get the first letter of the command
+            first_letter=$(echo "$cmd_name" | tr '[:lower:]' '[:upper:]' | cut -c1)
+            
+            # If this is a new letter, add a heading
+            if [ "$first_letter" != "$current_letter" ]; then
+              echo "" >> SPEC_INDEX.md
+              echo "## $first_letter" >> SPEC_INDEX.md
+              current_letter="$first_letter"
+            fi
+            
+            echo "- [$cmd_name]($path)" >> SPEC_INDEX.md
           done
           
       - name: Commit and push if changed
