@@ -6,7 +6,7 @@ This repository contains the official specification for RUSH, a simple shell for
 
 RUSH syntax is pretty simple, you can learn about it below
 
-[Syntax](<spec/command syntax.md>)
+[Syntax](<syntax.md>)
 
 ## Implementations
 
