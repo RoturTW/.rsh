@@ -13,7 +13,6 @@ This is an automatically generated alphabetical index of all specification files
 - [cd](<spec/cd.md>)
 - [chr](<spec/chr.md>)
 - [clear](<spec/clear.md>)
-- [command syntax](<spec/command syntax.md>)
 
 ## D
 - [date](<spec/date.md>)
