@@ -14,7 +14,7 @@ username@system ~ % ls [directory] [flags]
 
 ## Flags
 
-- `-r`: Display raw directory data instead of formatted output
+- `-j`: Display raw directory data instead of formatted output
 
 ## Examples
 
