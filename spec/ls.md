@@ -29,6 +29,6 @@ directory | Total Files: (10)
 /Name
 ...
 
-username@system ~ % ls -r
+username@system ~ % ls -j
 [raw JSON data of directory contents]
 ```
