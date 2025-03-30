@@ -3,9 +3,6 @@
 This is an automatically generated alphabetical index of all specification files.
 
 
-## A
-- [app](<spec/app.md>)
-
 ## C
 - [calc](<spec/calc.md>)
 - [cat](<spec/cat.md>)
