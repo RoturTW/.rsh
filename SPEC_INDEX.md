@@ -47,7 +47,6 @@ This is an automatically generated alphabetical index of all specification files
 - [ord](<spec/ord.md>)
 
 ## P
-- [package](<spec/package.md>)
 - [pwd](<spec/pwd.md>)
 
 ## R
