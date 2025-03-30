@@ -49,6 +49,56 @@ echo "Hello World"  # Print text with spaces
 cd /path/to/dir     # Change to specific directory
 ```
 
+## Conditional Execution
+
+RSH supports conditional execution using if-then-else syntax:
+
+```txt
+if (condition) then {code}
+```
+
+This structure evaluates the condition, and if true, executes the code inside the curly braces.
+
+Example:
+
+```bash
+if (fileExists "config.json") then {
+  echo "Config file found"
+}
+```
+
+You can also add an else clause:
+
+```txt
+if (condition) then {code} else {code}
+```
+
+Example:
+
+```bash
+if (isAdmin) then {
+  app install game
+} else {
+  echo "Admin privileges required"
+}
+```
+
+## Command Chaining
+
+Multiple commands can be executed sequentially by separating them with semicolons:
+
+```txt
+command1 ; command2 ; command3
+```
+
+Each command is executed in order, regardless of whether previous commands succeeded or failed.
+
+Example:
+
+```bash
+cd /projects ; ls ; echo "Directory contents listed"
+```
+
 ## Notes
 
 - Commands are case-sensitive

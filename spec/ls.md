@@ -15,6 +15,7 @@ username@system ~ % ls [directory] [flags]
 ## Flags
 
 - `-j`: Display raw directory data instead of formatted output
+- `-id`: Show file IDs
 
 ## Examples
 

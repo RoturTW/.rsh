@@ -11,6 +11,10 @@ List all files
 username@system ~ % la
 ```
 
+## Flags
+
+- `-id`: Show file IDs
+
 ## Example
 
 ```txt
