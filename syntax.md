@@ -62,7 +62,7 @@ This structure evaluates the condition, and if true, executes the code inside th
 Example:
 
 ```bash
-if (fileExists "config.json") then {
+if (test -f "config.json") then {
   echo "Config file found"
 }
 ```
