@@ -28,6 +28,7 @@ This is an automatically generated alphabetical index of all specification files
 - [grep](<spec/grep.md>)
 
 ## H
+- [head](<spec/head.md>)
 - [help](<spec/help.md>)
 - [htop](<spec/htop.md>)
 
@@ -62,12 +63,15 @@ This is an automatically generated alphabetical index of all specification files
 - [set](<spec/set.md>)
 - [shutdown](<spec/shutdown.md>)
 - [su](<spec/su.md>)
+- [syslog](<spec/syslog.md>)
 
 ## T
+- [tail](<spec/tail.md>)
 - [touch](<spec/touch.md>)
 
 ## U
 - [upload](<spec/upload.md>)
+- [uptime](<spec/uptime.md>)
 - [useradd](<spec/useradd.md>)
 - [userdel](<spec/userdel.md>)
 - [users](<spec/users.md>)
