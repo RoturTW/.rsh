@@ -13,7 +13,7 @@ username@system ~ % ps [flags]
 
 ## Flags
 
-- `-x`: Include processes without controlling terminals
+- `-x`: List all processes
 - `-p`: List all process IDs with the specified name
 
 ## Examples
