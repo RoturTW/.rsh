@@ -25,6 +25,7 @@ This is an automatically generated alphabetical index of all specification files
 - [font](<spec/font.md>)
 
 ## G
+- [get_key](<spec/get_key.md>)
 - [grep](<spec/grep.md>)
 
 ## H
@@ -60,7 +61,7 @@ This is an automatically generated alphabetical index of all specification files
 - [rm](<spec/rm.md>)
 
 ## S
-- [set](<spec/set.md>)
+- [set_key](<spec/set_key.md>)
 - [shutdown](<spec/shutdown.md>)
 - [su](<spec/su.md>)
 - [syslog](<spec/syslog.md>)
@@ -79,3 +80,4 @@ This is an automatically generated alphabetical index of all specification files
 ## W
 - [wc](<spec/wc.md>)
 - [wget](<spec/wget.md>)
+- [while](<spec/while.md>)

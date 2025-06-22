@@ -1,28 +1,28 @@
 # me
 
-Get user information
+Get user account information
 
-- Retrieves information about the current user
+- Returns a key from the rotur user's account
 
 ## Usage
 
 ```txt
-username@system ~ % me [property]
+username@system ~ % me key
 ```
 
-## Example
+## Examples
 
 ```txt
 username@system ~ % me username
 myusername
 
-username@system ~ % me system
-mysystem
+username@system ~ % me theme
+dark
 ```
 
 ## Notes
 
-- Retrieves a specific property from the user information object
-- Returns the value of the specified property
-- No property specified returns an error or all properties
-- Common properties include: username, system, id
+- Retrieves a specific key from the current rotur user's account object
+- Returns the value associated with the specified key
+- Common keys include: username, theme, id, email, preferences
+- See [rotur account objects](https://docs.rotur.dev/my-account/rotur-account-objects) for available keys

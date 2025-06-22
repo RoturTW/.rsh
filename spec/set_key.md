@@ -1,4 +1,4 @@
-# set
+# set_key
 
 Set JSON value
 
@@ -7,13 +7,13 @@ Set JSON value
 ## Usage
 
 ```txt
-username@system ~ % set key json_string value
+username@system ~ % set_key key json_string value
 ```
 
 ## Example
 
 ```txt
-username@system ~ % set name '{"id":123}' "John"
+username@system ~ % set_key name '{"id":123}' "John"
 {"id":123,"name":"John"}
 ```
 
