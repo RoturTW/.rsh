@@ -45,7 +45,6 @@ This is an automatically generated alphabetical index of all specification files
 ## M
 - [me](<spec/me.md>)
 - [mkdir](<spec/mkdir.md>)
-- [msg](<spec/msg.md>)
 - [mv](<spec/mv.md>)
 
 ## O
