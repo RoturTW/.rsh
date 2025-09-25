@@ -13,11 +13,9 @@ username@system ~ % mv source_file destination_directory
 ## Examples
 
 ```txt
-username@system ~ % mv document.txt /user/username/documents
-Moved file to: /user/username/documents
+username@system ~ % mv document.txt ~/documents
 
-username@system ~ % mv 42 /user/username/documents
-Moved file to: /user/username/documents
+username@system ~ % mv 42 ~/documents
 ```
 
 ## Notes
