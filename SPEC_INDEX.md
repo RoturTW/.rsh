@@ -67,6 +67,7 @@ This is an automatically generated alphabetical index of all specification files
 
 ## T
 - [tail](<spec/tail.md>)
+- [test](<spec/test.md>)
 - [touch](<spec/touch.md>)
 
 ## U
