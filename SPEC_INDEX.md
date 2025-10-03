@@ -3,6 +3,9 @@
 This is an automatically generated alphabetical index of all specification files.
 
 
+## B
+- [brightnessctl](<spec/brightnessctl.md>)
+
 ## C
 - [calc](<spec/calc.md>)
 - [cat](<spec/cat.md>)
@@ -40,6 +43,8 @@ This is an automatically generated alphabetical index of all specification files
 
 ## L
 - [la](<spec/la.md>)
+- [logname](<spec/logname.md>)
+- [logout](<spec/logout.md>)
 - [ls](<spec/ls.md>)
 
 ## M
@@ -57,6 +62,7 @@ This is an automatically generated alphabetical index of all specification files
 
 ## R
 - [random](<spec/random.md>)
+- [reboot](<spec/reboot.md>)
 - [rm](<spec/rm.md>)
 
 ## S
@@ -78,6 +84,7 @@ This is an automatically generated alphabetical index of all specification files
 - [users](<spec/users.md>)
 
 ## W
+- [wallpaperctl](<spec/wallpaperctl.md>)
 - [wc](<spec/wc.md>)
 - [wget](<spec/wget.md>)
 - [while](<spec/while.md>)
